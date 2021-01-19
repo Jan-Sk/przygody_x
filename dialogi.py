@@ -20,7 +20,7 @@ def dialog_2(plecak_bohatera):
         else:
             print("nie posiadasz ksiegi czarow, przynies mi ja na wymiane")
     else:
-        print("w takim wypadku zegnaj")
+        print("w takim wypadku zegnaj, do zobaczenia pozniej")
 
 
 def dialog_3(zycie):

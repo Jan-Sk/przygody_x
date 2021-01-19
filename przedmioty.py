@@ -40,6 +40,9 @@ przedmioty = {
         },
         "ksiega_czarow": {
             "opis": "pozwala uczyc sie nowych czarow"
+        },
+        "zloty_kompas": {
+            "opis": "jest to zwykly kompas... tylko, ze zloty"
         }
     }
 }
