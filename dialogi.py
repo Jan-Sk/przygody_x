@@ -27,3 +27,6 @@ def dialog_3(zycie):
     print("nie podchodz do mnie!")
     zycie = zycie[:-1]
     zycie = zycie[:-1]
+
+def dialog_4():
+    print("placeholder")
