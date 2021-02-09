@@ -1,7 +1,10 @@
 #!/bin/env python3
-import datetime
+import datetime, os, sys
 
-def ile_dni_zyjesz(rok, miesaic, dzien, dzisiaj):
+def ile_dni_zyjesz(rok, miesiac, dzien, dzisiaj):
+    rok = int(rok)
+    miesiac = int(miesiac)
+    dzien = int(dzien)
     dzien_urodzin = datetime.datetime(rok, miesiac, dzien)
     ilosc_dni = dzisiaj - dzien_urodzin
     return ilosc_dni
@@ -20,3 +23,5 @@ dzien = input("podaj dzien swoich urodzin: ")
 ilosc_dni = ile_dni_zyjesz(rok, miesiac, dzien, dzisiaj)
 
 print(f"na tym swiecie zyjesz juz {ilosc_dni}")
+with open(f"zapisane urodziny.txt", "w") as f:
+    f.write(f"na tym swiecie zyjesz juz {ilosc_dni}")
